@@ -8,7 +8,7 @@ def getfloor(l,B):#decides which floor to go now
         l = l - 1
     return l
 
-def getlastfloor(st):
+def getlastfloor(st):#loops getfloor to calculate the floor
     L = len(st)
     a = 0
     f = 0
@@ -19,5 +19,5 @@ def getlastfloor(st):
 
 
 #test = ""
-
+test = input()
 print(getlastfloor(test))
