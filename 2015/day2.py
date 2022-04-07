@@ -1,15 +1,24 @@
 #https://adventofcode.com/2015/day/2
 #TUSHAR MAHARANA
 #tusharhero.mit-license.org
+
+def findareaind(l,w,h):
+    a = l*w
+    b = l*h 
+    c = w*h
+    return [a,b,c]
+
+
 def surfacearea(l,w,h):#simple function for surface area
-    sa = l*w+l*h+w*h
-    sa = 2*sa
+    sal = findareaind(l, w, h)
+    sa = 2*(sal[0]+sal[1]+sal[2])
     return sa
 
 def findsmallest(l,w,h):#finds the smallest side
-    a = l*w #getting the areas (all this could be done in a single function thoo)
-    b = l*h 
-    c = w*h
+    sal = findareaind(l, w, h)
+    a = sal[0] #getting the areas (all this could be done in a single function thoo)
+    b = sal[1]
+    c = sal[2]
     if a <= b:# if a is smaller than b then
         if a <= c: # check if a is also smaller than c
             return a # if yes a is the side we need :)
@@ -25,6 +34,6 @@ def wrappingarea(l,w,h):
 
 #driver
 l = 1
-w = 3
-h = 5
+w = 1
+h = 10
 print(wrappingarea(l,w,h))
