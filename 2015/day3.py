@@ -36,10 +36,11 @@ def mov(c,m):#takes a coordinate as a list and moves the point as per the rules 
 def movstr(c,mstr):
     l = len(mstr)
     a = 0
+    cl = []
     while a < l:
+        cl.append(c)
         c = mov(c,mstr[a])
         a = a + 1
-        print(c)
-    return c
+    return cl
 
-movstr([0,0], ">^>v<^^^>>>v>^v")
+print(movstr([0,0], ">^>v<^^^>>>v>^v"))
