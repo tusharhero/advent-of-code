@@ -33,7 +33,7 @@ def mov(c,m):#takes a coordinate as a list and moves the point as per the rules 
     c = [x,y]#creating a list 
     return c
 
-def movstr(c,mstr):
+def movstr(c,mstr):#creates a list of all positions after each move.
     l = len(mstr)
     a = 0
     cl = []
@@ -43,7 +43,7 @@ def movstr(c,mstr):
         a = a + 1
     return cl
 
-def isitinlist(l,i):
+def isitinlist(l,i):#checks if an item exists in the list takes the list and item as input
     le = len(l)
     a = 0
     while a < le:
@@ -51,15 +51,19 @@ def isitinlist(l,i):
             return 1
         a = a + 1
     return 0
-    '''
-def finduniq(c,mstr):
-    mavstr = movstr(c,mstr)
-    l = len(mavstr)
+
+def getuniq(c,mstr):
+    mvstr = movstr(c,mstr)
+    l = len(mvstr)
     a = 0
     clq = []
-    while a == l:
-        if mavstr[a] == 1
-    return clq'''
-#print(finduniq([0,0], "^^^v"))
+    while a < l:
+        if isitinlist(mvstr, mvstr[a]) == 0:
+            clq.append(mvstr[a])
+        a = a + 1
+    return clq
 
-print(isitinlist([1,2,3], 2))
+
+print(getuniq([0,0], "^^^v"))
+
+#print(isitinlist([1,2,3], 2))
