@@ -43,4 +43,23 @@ def movstr(c,mstr):
         a = a + 1
     return cl
 
-print(movstr([0,0], "^v^v"))
+def isitinlist(l,i):
+    le = len(l)
+    a = 0
+    while a < le:
+        if i == l[a]:
+            return 1
+        a = a + 1
+    return 0
+    '''
+def finduniq(c,mstr):
+    mavstr = movstr(c,mstr)
+    l = len(mavstr)
+    a = 0
+    clq = []
+    while a == l:
+        if mavstr[a] == 1
+    return clq'''
+#print(finduniq([0,0], "^^^v"))
+
+print(isitinlist([1,2,3], 2))
