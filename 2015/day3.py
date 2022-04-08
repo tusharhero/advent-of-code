@@ -43,4 +43,4 @@ def movstr(c,mstr):
         a = a + 1
     return cl
 
-print(movstr([0,0], ">^>v<^^^>>>v>^v"))
+print(movstr([0,0], "^v^v"))
