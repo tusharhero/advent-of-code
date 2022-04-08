@@ -18,6 +18,6 @@ def getlastfloor(st):#loops getfloor to calculate the floor
     return f
 
 
-#test = ""
-test = input()
+test = "()()()("
+#test = input()
 print(getlastfloor(test))

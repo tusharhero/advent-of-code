@@ -2,7 +2,7 @@
 #TUSHAR MAHARANA
 #tusharhero.mit-license.org
 
-def findareaind(l,w,h):
+def findareaind(l,w,h):#this function gets the area of individual faces
     a = l*w
     b = l*h 
     c = w*h
@@ -16,7 +16,7 @@ def surfacearea(l,w,h):#simple function for surface area
 
 def findsmallest(l,w,h):#finds the smallest side
     sal = findareaind(l, w, h)
-    a = sal[0] #getting the areas (all this could be done in a single function thoo)
+    a = sal[0] #getting the areas using the function we made
     b = sal[1]
     c = sal[2]
     if a <= b:# if a is smaller than b then
