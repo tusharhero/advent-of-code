@@ -63,7 +63,9 @@ def getuniq(c,mstr):
         a = a + 1
     return clq
 
+def howmanyhouses(c,mstr):
+    return len(getuniq(c,mstr))
 
-print(getuniq([0,0], "^^^v"))
+print(howmanyhouses([0,0], "^^^v"))
 
 #print(isitinlist([1,2,3], 2))
