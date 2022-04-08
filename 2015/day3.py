@@ -58,7 +58,7 @@ def getuniq(c,mstr):
     a = 0
     clq = []
     while a < l:
-        if isitinlist(mvstr, mvstr[a]) == 0:
+        if isitinlist(mvstr, mvstr[a]) == 1:
             clq.append(mvstr[a])
         a = a + 1
     return clq
